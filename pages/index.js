@@ -17,7 +17,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Технические работы</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <AbstractComponent type={pageType} variants={headers} />
       <AbstractComponent type={pageType} variants={mains} />
