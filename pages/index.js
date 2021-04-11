@@ -1,6 +1,6 @@
 import { useState } from 'react'
+import styles from '@styles/index.module.css'
 import Head from 'next/head'
-import styles from '@styles/Home.module.css'
 
 //СуперКонпонент
 import AbstractComponent from '@components/AbstactComponent'
@@ -16,10 +16,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Carcoin - Технические работы</title>
+        <title>Технические работы</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {process.env.PAGE_TYPE}
       <AbstractComponent type={pageType} variants={headers} />
       <AbstractComponent type={pageType} variants={mains} />
       <AbstractComponent type={pageType} variants={footers} />
